@@ -8,12 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 
-import com.aloha.exercise_record.domain.Exercise;
-
-@RestController
-public class info {
+public class User {
   
   @GetMapping()
   public ResponseEntity<?> getAll() {
@@ -34,7 +30,7 @@ public class info {
   }
   
   @PostMapping()
-  public ResponseEntity<?> create(@RequestBody Exercise dto) {
+  public ResponseEntity<?> create(@RequestBody User user) {
       try {
           return new ResponseEntity<>("Create Result", HttpStatus.OK);
       } catch (Exception e) {
@@ -43,7 +39,7 @@ public class info {
   }
   
   @PutMapping()
-  public ResponseEntity<?> update(@RequestBody Exercise dto) {
+  public ResponseEntity<?> update(@RequestBody User user) {
       try {
           return new ResponseEntity<>("Update Result", HttpStatus.OK);
       } catch (Exception e) {
