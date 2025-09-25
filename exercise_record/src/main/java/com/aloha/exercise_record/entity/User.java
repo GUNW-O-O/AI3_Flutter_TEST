@@ -1,4 +1,4 @@
-package com.aloha.exercise_record.domain;
+package com.aloha.exercise_record.entity;
 
 import java.util.List;
 
