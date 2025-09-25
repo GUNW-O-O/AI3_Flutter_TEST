@@ -2,7 +2,7 @@ package com.aloha.exercise_record.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
+@Entity
 @Data
 @Table(name = "exercises")
 public class Exercise {
